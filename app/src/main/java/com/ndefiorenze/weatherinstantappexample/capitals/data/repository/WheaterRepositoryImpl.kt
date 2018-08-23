@@ -8,7 +8,7 @@ import java.util.Random
 class WheaterRepositoryImpl : WeatherRepository {
 
     override fun getWheaterForCity(city: String): Single<CityWeather> {
-        if (isWeatherKnownForCity(city)) {
+        if (isWeatherKnownForCity()) {
             return fetchWeatherForCity(city)
         }
         return getUnknownWeatherForCity(city)
@@ -23,7 +23,7 @@ class WheaterRepositoryImpl : WeatherRepository {
                 windSpeed = (0 until 40).random().toFloat()))
     }
 
-    private fun isWeatherKnownForCity(city: String): Boolean {
+    private fun isWeatherKnownForCity(): Boolean {
         return Math.random() < 0.9f
     }
 

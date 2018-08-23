@@ -29,7 +29,7 @@ class CitiesAdapter(var dataSet: List<CityWeather> = emptyList()) : RecyclerView
 private fun CityWeather.toDescribableContent(): String {
     return when (this) {
         is CityWeather.Known -> this.toDescribableContent()
-        is CityWeather.Unknown -> "Unknown weather"
+        is CityWeather.Unknown -> "Unknown weather for $city"
     }
 
 }
