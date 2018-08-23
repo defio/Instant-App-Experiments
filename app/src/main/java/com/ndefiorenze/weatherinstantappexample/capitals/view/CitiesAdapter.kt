@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.ndefiorenze.weatherinstantappexample.R
 import com.ndefiorenze.weatherinstantappexample.capitals.data.CityWeather
+import com.ndefiorenze.weatherinstantappexample.capitals.data.toDescribableContent
 
 class CitiesAdapter(var dataSet: List<CityWeather> = emptyList()) : RecyclerView.Adapter<CityWeatherCellViewHolder>() {
 
@@ -23,23 +24,5 @@ class CitiesAdapter(var dataSet: List<CityWeather> = emptyList()) : RecyclerView
     override fun onBindViewHolder(holder: CityWeatherCellViewHolder, position: Int) {
         holder.textView.text = dataSet[position].toDescribableContent()
     }
-
-}
-
-private fun CityWeather.toDescribableContent(): String {
-    return when (this) {
-        is CityWeather.Known -> this.toDescribableContent()
-        is CityWeather.Unknown -> "Unknown weather for $city"
-    }
-
-}
-
-private fun CityWeather.Known.toDescribableContent(): String {
-    return """
-       City: $city
-       Weather Condition: $weatherCondition,
-       Temperature: $temperature °C,
-       Wind Speed: ${windSpeed.toInt()} km/h
-   """.trimIndent()
 
 }

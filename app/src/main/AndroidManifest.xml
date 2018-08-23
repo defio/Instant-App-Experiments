@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".capitals.view.CapitalsActivity">
+
+        </activity>
+        <activity android:name=".city.view.CityActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
