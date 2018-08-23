@@ -13,6 +13,10 @@
 
         </activity>
         <activity android:name=".city.view.CityActivity" >
+
+        </activity>
+
+        <activity android:name=".landing.view.LandingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
