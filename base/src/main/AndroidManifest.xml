@@ -3,6 +3,7 @@
     package="com.ndefiorenze.weather.base">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,17 +11,81 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.ndefiorenze.weatherinstantappexample.capitals.view.CapitalsActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/capitals"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/capitals"
+                    android:scheme="https" />
+            </intent-filter>
         </activity>
-        <activity android:name="com.ndefiorenze.weatherinstantappexample.city.view.CityActivity" >
+        <activity android:name="com.ndefiorenze.weatherinstantappexample.city.view.CityActivity">
 
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/city"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/city"
+                    android:scheme="https" />
+            </intent-filter>
         </activity>
 
         <activity android:name="com.ndefiorenze.weatherinstantappexample.landing.view.LandingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/landing"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="weather.ndefiorenze.com"
+                    android:pathPattern="/landing"
+                    android:scheme="https" />
             </intent-filter>
         </activity>
     </application>
