@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.google.android.instantapps.InstantApps
 import com.ndefiorenze.weather.landing.R
 import kotlinx.android.synthetic.main.landing_fragment.button_capitals
 import kotlinx.android.synthetic.main.landing_fragment.button_city
@@ -33,11 +34,37 @@ class LandingFragment : Fragment() {
             val starter = baseIntent(URL_CAPITALS, activity)
             activity.startActivity(starter)
         }
-        buttonCity.setOnClickListener{
-            val starter = baseIntent(URL_CITY, activity)
-            activity.startActivity(starter)
+
+        val isInstantApp = InstantApps.isInstantApp(activity)
+
+        if (isInstantApp) {
+            buttonCity.text = "Download full app"
+
+            val postInstallIntent = getPostInstallationIntent()
+
+            buttonCity.setOnClickListener {
+                InstantApps.showInstallPrompt(activity,
+                        postInstallIntent,
+                        REQUEST_CODE,
+                        REFERRER)
+            }
+        } else {
+            buttonCity.setOnClickListener {
+                val starter = baseIntent(URL_CITY, activity)
+                activity.startActivity(starter)
+            }
         }
 
+    }
+
+    private fun getPostInstallationIntent(): Intent {
+        return Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://install-api.weatherinstantappexample.com/")
+        ).addCategory(Intent.CATEGORY_BROWSABLE)
+                .putExtras(
+                        Bundle().apply {
+                            putString("The key to", "sending data via intent")
+                        })
     }
 
     private fun baseIntent(url: String, context: Context? = null): Intent {
@@ -61,5 +88,9 @@ class LandingFragment : Fragment() {
         private const val URL_LANDING = "$URL_BASE/landing"
         private const val URL_CAPITALS = "$URL_BASE/capitals"
         private const val URL_CITY = "$URL_BASE/city"
+
+
+        private val REFERRER = "LandingFragment"
+        private val REQUEST_CODE = 1
     }
 }
