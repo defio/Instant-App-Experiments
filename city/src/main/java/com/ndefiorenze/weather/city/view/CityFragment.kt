@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.city.view
+package com.ndefiorenze.weather.city.view
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -12,11 +12,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.city.R
+import com.ndefiorenze.weather.city.viewmodel.CityViewModel
+import com.ndefiorenze.weather.city.viewmodel.CityViewModelFactory
 import com.ndefiorenze.weatherinstantappexample.capitals.addTo
 import com.ndefiorenze.weatherinstantappexample.capitals.data.toDescribableContent
-import com.ndefiorenze.weatherinstantappexample.city.viewmodel.CityViewModel
-import com.ndefiorenze.weatherinstantappexample.city.viewmodel.CityViewModelFactory
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.city.viewmodel
+package com.ndefiorenze.weather.city.viewmodel
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider

@@ -1,9 +1,9 @@
-package com.ndefiorenze.weatherinstantappexample.city.view
+package com.ndefiorenze.weather.city.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.city.R
 
 class CityActivity : AppCompatActivity() {
 

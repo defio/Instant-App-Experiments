@@ -56,7 +56,6 @@ class LandingFragment : Fragment() {
         buttonCity.setOnClickListener(null)
     }
 
-
     companion object {
         private const val URL_BASE = "https://weather.ndefiorenze.com"
         private const val URL_LANDING = "$URL_BASE/landing"
