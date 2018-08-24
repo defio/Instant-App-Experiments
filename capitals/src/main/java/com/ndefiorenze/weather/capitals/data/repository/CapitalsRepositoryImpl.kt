@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.data.repository
+package com.ndefiorenze.weather.capitals.data.repository
 
 class CapitalsRepositoryImpl : CapitalsRepository {
 
