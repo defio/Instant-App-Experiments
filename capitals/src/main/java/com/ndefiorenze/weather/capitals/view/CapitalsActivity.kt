@@ -1,9 +1,9 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.view
+package com.ndefiorenze.weather.capitals.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.capitals.R
 
 class CapitalsActivity : AppCompatActivity() {
 

@@ -1,10 +1,10 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.view
+package com.ndefiorenze.weather.capitals.view
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.capitals.R
 import com.ndefiorenze.weatherinstantappexample.capitals.data.CityWeather
 import com.ndefiorenze.weatherinstantappexample.capitals.data.toDescribableContent
 

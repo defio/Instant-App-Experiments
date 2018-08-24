@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.view
+package com.ndefiorenze.weather.capitals.view
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -8,10 +8,10 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.capitals.R
+import com.ndefiorenze.weather.capitals.viewmodel.CapitalsViewModel
+import com.ndefiorenze.weather.capitals.viewmodel.CapitalsViewModelFactory
 import com.ndefiorenze.weatherinstantappexample.capitals.addTo
-import com.ndefiorenze.weatherinstantappexample.capitals.viewmodel.CapitalsViewModel
-import com.ndefiorenze.weatherinstantappexample.capitals.viewmodel.CapitalsViewModelFactory
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
