@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.landing.view
+package com.ndefiorenze.weather.landing.view
 
 import android.app.Fragment
 import android.content.Context
@@ -9,7 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.landing.R
 import kotlinx.android.synthetic.main.landing_fragment.button_capitals
 import kotlinx.android.synthetic.main.landing_fragment.button_city
 

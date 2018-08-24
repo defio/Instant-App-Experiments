@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/city" />
             <option value="$PROJECT_DIR$/installed" />
             <option value="$PROJECT_DIR$/instant" />
+            <option value="$PROJECT_DIR$/landing" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

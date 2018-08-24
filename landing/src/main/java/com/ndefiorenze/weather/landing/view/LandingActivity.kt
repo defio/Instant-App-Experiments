@@ -1,8 +1,8 @@
-package com.ndefiorenze.weatherinstantappexample.landing.view
+package com.ndefiorenze.weather.landing.view
 
 import android.app.Activity
 import android.os.Bundle
-import com.ndefiorenze.weather.base.R
+import com.ndefiorenze.weather.landing.R
 
 class LandingActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

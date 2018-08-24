@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import com.ndefiorenze.weather.capitals.R
-import com.ndefiorenze.weatherinstantappexample.capitals.data.CityWeather
-import com.ndefiorenze.weatherinstantappexample.capitals.data.toDescribableContent
+import com.ndefiorenze.weatherinstantappexample.data.CityWeather
+import com.ndefiorenze.weatherinstantappexample.data.toDescribableContent
 
 class CitiesAdapter(var dataSet: List<CityWeather> = emptyList()) : RecyclerView.Adapter<CityWeatherCellViewHolder>() {
 

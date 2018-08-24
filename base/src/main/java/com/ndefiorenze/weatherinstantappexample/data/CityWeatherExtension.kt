@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.data
+package com.ndefiorenze.weatherinstantappexample.data
 
 fun CityWeather.toDescribableContent(): String {
     return when (this) {

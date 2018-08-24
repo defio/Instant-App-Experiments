@@ -15,8 +15,8 @@ import android.widget.TextView
 import com.ndefiorenze.weather.city.R
 import com.ndefiorenze.weather.city.viewmodel.CityViewModel
 import com.ndefiorenze.weather.city.viewmodel.CityViewModelFactory
-import com.ndefiorenze.weatherinstantappexample.capitals.addTo
-import com.ndefiorenze.weatherinstantappexample.capitals.data.toDescribableContent
+import com.ndefiorenze.weatherinstantappexample.addTo
+import com.ndefiorenze.weatherinstantappexample.data.toDescribableContent
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

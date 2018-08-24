@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.data
+package com.ndefiorenze.weatherinstantappexample.data
 
 sealed class CityWeather {
 

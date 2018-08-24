@@ -1,7 +1,7 @@
-package com.ndefiorenze.weatherinstantappexample.capitals.data.repository
+package com.ndefiorenze.weatherinstantappexample.data.repository
 
-import com.ndefiorenze.weatherinstantappexample.capitals.data.CityWeather
-import com.ndefiorenze.weatherinstantappexample.capitals.data.WeatherCondition
+import com.ndefiorenze.weatherinstantappexample.data.CityWeather
+import com.ndefiorenze.weatherinstantappexample.data.WeatherCondition
 import io.reactivex.Single
 import java.util.Random
 

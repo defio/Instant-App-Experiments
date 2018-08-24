@@ -6,7 +6,7 @@
     tools:context=".landing.view.LandingActivity">
 
     <fragment
-        android:name="com.ndefiorenze.weatherinstantappexample.landing.view.LandingFragment"
+        android:name="com.ndefiorenze.weather.landing.view.LandingFragment"
         android:id="@+id/CapitalsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

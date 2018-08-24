@@ -4,4 +4,5 @@ dependencies {
     implementation project(':base')
     implementation project(':city')
     implementation project(':capitals')
+    implementation project(':landing')
 }

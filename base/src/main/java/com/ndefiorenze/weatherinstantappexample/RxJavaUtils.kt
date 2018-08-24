@@ -1,4 +1,4 @@
-package com.ndefiorenze.weatherinstantappexample.capitals
+package com.ndefiorenze.weatherinstantappexample
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

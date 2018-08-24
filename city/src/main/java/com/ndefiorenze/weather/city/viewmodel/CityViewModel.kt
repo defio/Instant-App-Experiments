@@ -1,9 +1,9 @@
 package com.ndefiorenze.weather.city.viewmodel
 
 import android.arch.lifecycle.ViewModel
-import com.ndefiorenze.weatherinstantappexample.capitals.addTo
-import com.ndefiorenze.weatherinstantappexample.capitals.data.CityWeather
-import com.ndefiorenze.weatherinstantappexample.capitals.data.repository.WeatherRepository
+import com.ndefiorenze.weatherinstantappexample.addTo
+import com.ndefiorenze.weatherinstantappexample.data.CityWeather
+import com.ndefiorenze.weatherinstantappexample.data.repository.WeatherRepository
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers

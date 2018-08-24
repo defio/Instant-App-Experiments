@@ -27,6 +27,7 @@ dependencies {
     application project(':installed')
     feature project(":city")
     feature project(":capitals")
+    feature project(":landing")
 
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
@@ -35,8 +36,6 @@ dependencies {
 
     api "io.reactivex.rxjava2:rxjava:2.2.0"
     api 'io.reactivex.rxjava2:rxandroid:2.1.0'
-
-
 
     api 'com.android.support.constraint:constraint-layout:1.1.2'
 

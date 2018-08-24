@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import com.ndefiorenze.weather.capitals.R
 import com.ndefiorenze.weather.capitals.viewmodel.CapitalsViewModel
 import com.ndefiorenze.weather.capitals.viewmodel.CapitalsViewModelFactory
-import com.ndefiorenze.weatherinstantappexample.capitals.addTo
+import com.ndefiorenze.weatherinstantappexample.addTo
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
