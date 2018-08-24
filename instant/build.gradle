@@ -2,4 +2,7 @@ apply plugin: 'com.android.instantapp'
 
 dependencies {
     implementation project(':base')
+    implementation project(':city')
+    implementation project(':capitals')
+    implementation project(':landing')
 }
